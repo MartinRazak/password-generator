@@ -1,5 +1,5 @@
 from storage import load_data, save_data
-from manager import generate_password
+from manager import generate_password, check_strength
 
 
 data = load_data()
@@ -32,7 +32,11 @@ Please select an option: ''')
         service = input("Enter your service: ")
 
         if service in data:
-            print(f"Your password for {service} : {data[service]}")
+            password = data[service]
+            strength = check_strength(password)
+
+            print(f"Your password for {service}: {password}")
+            print(f"Password strength: {strength}")
         else:
             print(f"You do not have any password associated with {service}")
 
