@@ -14,6 +14,7 @@ It lets you generate, store, retrieve, update, and delete passwords for differen
 - Delete passwords with confirmation
 - List all saved services
 - Local data storage using JSON
+- Formatting updates
 
 ---
 
