@@ -66,7 +66,7 @@ Please select an option: ''')
             save_data(data)
             print("Password successfully updated!")
         else:
-            print("You do not have a password saved for this service")
+            print("You do not have a password saved for this service.")
 
     elif menu_choice == '5':
         if data:
